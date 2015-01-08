@@ -26,6 +26,7 @@ public class PanOne extends JPanel{
         btnPrev.addActionListener(buttonListener);
         
         
+        
     }
     
     
