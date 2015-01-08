@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CardLayoutTest;
+package WTAfiles;
 
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class PanThree extends JPanel{
+public class Pan3Face extends JPanel{
     JButton btnNext, btnPrev;
     JLabel lblId;
     
-    public PanThree(ActionListener buttonListener){
-        lblId = new JLabel("This is panel #3");
+    public Pan3Face(ActionListener buttonListener){
+        lblId = new JLabel("This is panel #2");
         btnNext = new JButton("Next");
         btnPrev = new JButton("Previous");
         add(lblId);

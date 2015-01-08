@@ -1,4 +1,4 @@
-package CardLayoutTest;
+package WTAfiles;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -20,9 +20,9 @@ public class WTAlaunch extends JFrame
         setBackground(Color.yellow);
         setResizable(false);
         
-        PanOne panOne = new PanOne(buttonListener);
-        PanTwo panTwo = new PanTwo(buttonListener);
-        PanThree panThree = new PanThree(buttonListener);
+        Pan1Name panOne = new Pan1Name(buttonListener);
+        Pan3Face panTwo = new Pan3Face(buttonListener);
+        Pan2Gender panThree = new Pan2Gender(buttonListener);
 
         panMaster = new JPanel(new CardLayout());
 
