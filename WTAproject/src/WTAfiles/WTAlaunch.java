@@ -9,6 +9,7 @@ public class WTAlaunch extends JFrame
 
     JPanel panMaster;
     CardLayout cardLayout;
+    int nDig1, nDig2, nDig3;
 
     public WTAlaunch() //This is the CONSTRUCTOR method
     {
@@ -21,11 +22,11 @@ public class WTAlaunch extends JFrame
         setResizable(false);
         
         Pan1Name panOne = new Pan1Name(buttonListener);
-        Pan3Face panTwo = new Pan3Face(buttonListener);
-        Pan2Gender panThree = new Pan2Gender(buttonListener);
+        Pan2Gender panTwo = new Pan2Gender(buttonListener);
+        Pan2Gender2 genFind = new Pan2Gender(digFinder);
+        Pan3Face panThree = new Pan3Face(buttonListener);
 
         panMaster = new JPanel(new CardLayout());
-
         panMaster.add(panOne);
         panMaster.add(panTwo);
         panMaster.add(panThree);
@@ -43,10 +44,26 @@ public class WTAlaunch extends JFrame
             String sAction;
             sAction = e.getActionCommand();
             if(sAction.equals("Next")){
-                cardLayout.next(panMaster);
-                
+                cardLayout.next(panMaster);                
             }
             if(sAction.equals("Previous")){
+                cardLayout.previous(panMaster);
+            }
+        }
+        
+    }
+        class DigFinder implements ActionListener{
+        
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("Button is pressed");
+            String sAction;
+            sAction = e.getActionCommand();
+            if(sAction.equals("Male0")){
+                nDig1 = 0;               
+            }
+            else if(sAction.equals("Female1")){
                 cardLayout.previous(panMaster);
             }
         }

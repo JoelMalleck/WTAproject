@@ -15,7 +15,7 @@ public class Pan3Face extends JPanel{
     JLabel lblId;
     
     public Pan3Face(ActionListener buttonListener){
-        lblId = new JLabel("This is panel #2");
+        lblId = new JLabel("This is panel #3");
         btnNext = new JButton("Next");
         btnPrev = new JButton("Previous");
         add(lblId);

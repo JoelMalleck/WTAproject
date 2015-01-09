@@ -10,22 +10,23 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class Pan1Name extends JPanel{
     JButton btnNext, btnPrev;
     JLabel lblId;
+    JTextField txtBox;
+    String sName;
     
     public Pan1Name(ActionListener buttonListener){
-        lblId = new JLabel("This is panel #1");
+        lblId = new JLabel("Enter your character's name!");
         btnNext = new JButton("Next");
-        btnPrev = new JButton("Previous");
+        txtBox = new JTextField(12);
         add(lblId);
+        add(txtBox);
         add(btnNext);
-        add(btnPrev);
-        btnNext.addActionListener(buttonListener);
-        btnPrev.addActionListener(buttonListener);
-        
-        
+        btnNext.addActionListener(buttonListener);       
+        sName = txtBox.getText();
         
     }
     
