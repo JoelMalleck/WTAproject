@@ -5,19 +5,23 @@
  */
 package WTAfiles;
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Pan5Fin extends JPanel{
-    JButton create;
-    
-    public Pan5Fin(ActionListener buttonListener){
+
+    static JButton create;
+    static JLabel picture;
+    static String sDig1 = "", sDig2 = "", sDig3 = "", sFinal;
+
+    public Pan5Fin(ActionListener buttonListener) {
         create = new JButton("Create!");
         add(create);
         create.addActionListener(buttonListener);
+        
     }
-    
-    
-    
 }
