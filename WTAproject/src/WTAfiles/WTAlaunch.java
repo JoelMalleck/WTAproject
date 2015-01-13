@@ -25,6 +25,7 @@ public class WTAlaunch extends JFrame {
         Pan3Wear panThree = new Pan3Wear(buttonListener);
         Pan4Face panFour = new Pan4Face(buttonListener);
         Pan5Fin panFive = new Pan5Fin(buttonListener);
+        //Pan6Char panSix = new Pan6Char(buttonListener);
 
         panMaster = new JPanel(new CardLayout());
         panMaster.add(panOne);
@@ -38,15 +39,7 @@ public class WTAlaunch extends JFrame {
 
     }
 
-    protected static ImageIcon createImageIcon(String path) {
-        java.net.URL imgURL = WTAlaunch.class.getResource(path);
-        if (imgURL != null) {
-            return new ImageIcon(imgURL);
-        } else {
-            System.err.println("Couldn't find file: " + path);
-            return null;
-        }
-    }
+    
 
     class ButtonListener implements ActionListener {
 
@@ -80,12 +73,24 @@ public class WTAlaunch extends JFrame {
                 sDig3 = "2";
             } else if (sAction.equals("face3")) {
                 sDig3 = "3";
-            } else if (sAction.equals("Create!")) {
-                ImageIcon icon = new ImageIcon("src/WTAfiles/images/" + sDig1
-                        + sDig2 + sDig3);
-                Pan5Fin.picture = new JLabel(icon);              
-                add(Pan5Fin.picture);
-                System.out.println("actionlistener working, image function not working");
+            } else if (sAction.equals("Create!")) {                                
+                JFrame charframe = new JFrame();
+                charframe.setLayout(new FlowLayout()); //Use this for now.
+                charframe.setSize(200, 200); //Set the size of the JFrame
+                charframe.setTitle("Welcome to Animal Crossing!"); //Put Title on top of JFrame
+                charframe.setBackground(Color.yellow);
+                charframe.setResizable(false);
+                charframe.setVisible(true);
+                //ImageIcon icon = new ImageIcon("src/WTAfiles/images/" + sDig1
+                //        + sDig2 + sDig3 + ".png");
+                //piclabel.add(icon);
+                //piclabel.setSize(100, 100);
+                //add(piclabel);
+                
+                
+                charframe.add(new JLabel(new ImageIcon("src/WTAfiles/images/" + sDig1
+                        + sDig2 + sDig3 + ".png")));
+                        
             }
         }
     }
