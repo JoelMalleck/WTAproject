@@ -15,13 +15,14 @@ import javax.swing.JTextField;
 public class Pan1Name extends JPanel{
     JButton btnNext, btnPrev;
     JLabel lblId;
-    JTextField txtBox;
-    String sName;
+    public static JTextField txtBox;
+    public static String sName;
     
     public Pan1Name(ActionListener buttonListener){
-        lblId = new JLabel("Enter your character's name!");
+        lblId = new JLabel("Hello there! What's your name?!");
         btnNext = new JButton("Next");
         txtBox = new JTextField(12);
+        
         add(lblId);
         add(txtBox);
         add(btnNext);

@@ -18,14 +18,14 @@ public class Pan4Face extends JPanel{
     JRadioButton face0, face1, face2, face3;
     
     public Pan4Face(ActionListener buttonListener){
-        lblId = new JLabel("Face");
+        lblId = new JLabel("Personality?");
         btnNext = new JButton("Next");
         btnPrev = new JButton("Previous");
         ButtonGroup group = new ButtonGroup();
-        face0 = new JRadioButton("face0");
-        face1 = new JRadioButton("face1");
-        face2 = new JRadioButton("face2");
-        face3 = new JRadioButton("face3");
+        face0 = new JRadioButton("Killer");
+        face1 = new JRadioButton("Violent");
+        face2 = new JRadioButton("Evil");
+        face3 = new JRadioButton("Psycho");
         add(lblId);
         add(face0);
         add(face1);

@@ -19,7 +19,7 @@ public class Pan2Gender extends JPanel{
     JRadioButton Male, Female;
     
     public Pan2Gender(ActionListener buttonListener){
-        lblId = new JLabel("Choose your gender!");
+        lblId = new JLabel("What is your gender?");
         ButtonGroup group = new ButtonGroup();
         Male = new JRadioButton("Male");
         Female = new JRadioButton("Female");

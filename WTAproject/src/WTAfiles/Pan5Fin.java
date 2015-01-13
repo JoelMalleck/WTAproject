@@ -13,15 +13,16 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Pan5Fin extends JPanel{
-
-    static JButton create;
     static JLabel picture;
-    static String sDig1 = "", sDig2 = "", sDig3 = "", sFinal;
+    static JButton create;
+    static JButton btnPrev;
 
     public Pan5Fin(ActionListener buttonListener) {
-        create = new JButton("Create!");
+        create = new JButton("Create my Villager!");
+        btnPrev = new JButton("Previous");
         add(create);
+        add(btnPrev);
         create.addActionListener(buttonListener);
-        
+        btnPrev.addActionListener(buttonListener);   
     }
 }

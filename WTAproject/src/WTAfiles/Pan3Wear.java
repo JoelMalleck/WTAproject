@@ -18,14 +18,14 @@ public class Pan3Wear extends JPanel{
     JRadioButton wear0, wear1, wear2, wear3;
     
     public Pan3Wear(ActionListener buttonListener){
-        lblId = new JLabel("Wear");
+        lblId = new JLabel("How do you look?");
         ButtonGroup group = new ButtonGroup();
         btnNext = new JButton("Next");
         btnPrev = new JButton("Previous");
-        wear0 = new JRadioButton("wear0");
-        wear1 = new JRadioButton("wear1");
-        wear2 = new JRadioButton("wear2");
-        wear3 = new JRadioButton("wear3");
+        wear0 = new JRadioButton("Bright");
+        wear1 = new JRadioButton("Sporty");
+        wear2 = new JRadioButton("Casual");
+        wear3 = new JRadioButton("Slacker");
         add(lblId);
         add(wear0);
         add(wear1);
